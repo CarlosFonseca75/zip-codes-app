@@ -11,8 +11,8 @@
   // Footer title.
   &__title {
     display: grid;
-    grid-template-columns: auto 1.5rem auto;
-    align-items: end;
+    grid-auto-flow: column;
+    align-items: center;
     gap: 0.5rem;
   }
 
