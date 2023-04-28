@@ -42,7 +42,7 @@ export default function PrivateNavbar() {
       await makeRequest(options);
 
       // Show success alert.
-      showAlert({ title: "Logged out", message });
+      showAlert({ title: "Logged out", message: "Logged out successfully" });
 
       // Redirect to index.
       router.push("/");
