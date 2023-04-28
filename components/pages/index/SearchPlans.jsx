@@ -1,6 +1,5 @@
 // Dependencies.
 import React, { useState } from "react";
-import Image from "next/image";
 
 // Helpers.
 import makeRequest from "@helpers/makeRequest";

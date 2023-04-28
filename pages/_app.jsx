@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 // Dependencies.
 import { ReactNotifications } from "react-notifications-component";
 
-// Prevent fontawesome from adding its CSS automatically.
+// Prevent fontawesome from adding CSS files automatically.
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; 
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 
 // Helpers.
 import makeRequest from "@helpers/makeRequest";
+import showAlert from "@helpers/showAlert";
 
 // Icons.
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -38,7 +39,20 @@ export default function PrivateNavbar() {
       };
 
       // Request.
-      await makeRequest(options);
+      const { httpStatus, message } = await makeRequest(options);
+
+      // Check for errors.
+      if (httpStatus != 200) {
+        showAlert({
+          title: "Error",
+          type: "danger",
+          message,
+        });
+        return;
+      }
+
+      // Show success alert.
+      showAlert({ title: "Logged out", message });
 
       // Redirect to index.
       router.push("/");
