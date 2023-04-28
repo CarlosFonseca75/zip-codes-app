@@ -1,0 +1,16 @@
+@import "@styles/variables.scss";
+
+// Container.
+.container {
+  display: grid;
+  gap: 2rem;
+
+  button {
+    justify-self: right;
+  }
+
+  // Phones styles.
+  @media (max-width: 767px) {
+    grid-template-columns: 100%;
+  }
+}

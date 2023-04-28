@@ -1,0 +1,44 @@
+@import "@styles/variables.scss";
+
+.container {
+  display: grid;
+  gap: 0.2rem;
+
+  button {
+    border-radius: 4px;
+    color: #fff;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+
+  // Modifiers.
+  &--primary {
+    button {
+      border: thin solid $primary-color;
+      background-color: $primary-color;
+    }
+  }
+
+  &--secondary {
+    button {
+      border: thin solid $secondary-color;
+      background-color: $secondary-color;
+    }
+  }
+
+  &--danger {
+    button {
+      border: thin solid $danger-color;
+      background-color: $danger-color;
+    }
+  }
+
+  &--disabled {
+    button {
+      border: thin solid $tertiary-color;
+      background-color: $tertiary-color;
+      color: #dad5d5;
+      cursor: not-allowed;
+    }
+  }
+}

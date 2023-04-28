@@ -1,0 +1,35 @@
+@import "@styles/variables.scss";
+
+.container {
+  display: grid;
+  padding: 1rem 5rem;
+  background-color: #fff;
+
+  // Phones styles.
+  @media (max-width: 767px) {
+    padding: 1rem;
+  }
+
+  // List.
+  &__list {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  // Login.
+  &__item:last-child {
+    justify-self: end;
+
+    & a {
+      display: grid;
+      grid-template-columns: 2rem auto;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $primary-color;
+    }
+  }
+}

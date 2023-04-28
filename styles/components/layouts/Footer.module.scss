@@ -1,0 +1,23 @@
+@import "@styles/variables.scss";
+
+.container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 6rem;
+  margin-top: 6rem;
+  background-color: #fff;
+
+  // Footer title.
+  &__title {
+    display: grid;
+    grid-template-columns: auto 1.5rem auto;
+    align-items: end;
+    gap: 0.5rem;
+  }
+
+  // Footer icon.
+  &__icon {
+    color: $primary-color;
+  }
+}

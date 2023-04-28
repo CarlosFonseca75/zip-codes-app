@@ -1,0 +1,21 @@
+@import "@styles/variables.scss";
+
+.container {
+  display: grid;
+  gap: 0.2rem;
+
+  input {
+    border: thin solid $primary-color;
+    border-radius: 4px;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.optional-message {
+  color: $tertiary-color;
+}

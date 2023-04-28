@@ -1,0 +1,66 @@
+@import "@styles/variables.scss";
+
+// Title.
+.title {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+// Search.
+.search-container {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: 40rem;
+  justify-content: center;
+
+  // Phones styles.
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+
+    // Phones styles.
+    @media (max-width: 767px) {
+      margin: 0 1rem;
+    }
+  }
+}
+
+// Plans.
+.plans-container {
+  display: grid;
+  grid-template-columns: 50rem;
+  margin: 5rem 1rem 0 1rem;
+  justify-content: center;
+  gap: 2rem;
+
+  & div:first-child {
+    justify-self: center;
+  }
+
+  // Phones styles.
+  @media (max-width: 767px) {
+    grid-template-columns: 100%;
+  }
+
+  // Loader.
+  &__loader {
+    margin-top: 5rem;
+    justify-self: center;
+  }
+
+  // No plans available message.
+  &__message {
+    display: grid;
+    grid-template-columns: 20rem;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    color: $primary-color;
+    margin-top: 5rem;
+  }
+}

@@ -1,0 +1,34 @@
+@import "@styles/variables.scss";
+
+%card-item {
+  font-size: 1.2rem;
+  color: $secondary-color;
+}
+
+// Card.
+.card {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: $box-shadow;
+  background-color: #fff;
+
+  &__zip-code {
+    color: $primary-color;
+  }
+
+  &__city {
+    @extend %card-item;
+  }
+
+  &__state {
+    @extend %card-item;
+  }
+
+  &__actions {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: right;
+    gap: 1rem;
+  }
+}

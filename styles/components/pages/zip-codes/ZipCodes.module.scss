@@ -1,0 +1,42 @@
+@import "@styles/variables.scss";
+
+// Title.
+.title {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+// Container.
+.container {
+  display: grid;
+  grid-template-columns: 50rem;
+  margin: 5rem 1rem 0 1rem;
+  justify-content: center;
+  gap: 2rem;
+
+  & button {
+    justify-self: right;
+  }
+
+  // Loader.
+  &__loader {
+    margin-top: 5rem;
+    justify-self: center;
+  }
+
+  // No zip codes available message.
+  &__message {
+    display: grid;
+    grid-template-columns: 20rem;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    color: $primary-color;
+    margin-top: 5rem;
+  }
+
+  // Phones styles.
+  @media (max-width: 767px) {
+    grid-template-columns: 100%;
+  }
+}
