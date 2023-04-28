@@ -44,10 +44,14 @@ export default function ZipCode({
       </p>
 
       {/* City. */}
-      <p className={styles.card__city}>{city}</p>
+      <p className={styles.card__city}>
+        <strong>City:</strong> {city}
+      </p>
 
       {/* State. */}
-      <p className={styles.card__state}>{state}</p>
+      <p className={styles.card__state}>
+        <strong>State:</strong> {state}
+      </p>
 
       {/* Actions. */}
       <div className={styles.card__actions}>

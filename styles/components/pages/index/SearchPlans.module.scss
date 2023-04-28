@@ -56,9 +56,8 @@
   // No plans available message.
   &__message {
     display: grid;
-    grid-template-columns: 20rem;
-    text-align: center;
-    justify-content: center;
+    font-size: 12rem;
+    justify-items: center;
     gap: 2rem;
     color: $primary-color;
     margin-top: 5rem;

@@ -18,12 +18,12 @@ import Switch from "@components/common/Switch";
 import Plan from "./Plan";
 
 // Styles.
-import styles from "@styles/components/pages/index/Plans.module.scss";
+import styles from "@styles/components/pages/index/SearchPlans.module.scss";
 
 // Icons.
 const openBoxIcon = <FontAwesomeIcon icon={faBoxOpen} />;
 
-export default function Search() {
+export default function SearchPlans() {
   // State.
   const [zipCode, setZipCode] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -147,7 +147,7 @@ export default function Search() {
         >
           <Input
             id="zipCode"
-            type="number"
+            type="text"
             name="zipCode"
             value={zipCode}
             placeholder="Enter your zip code, e.g. 37207"

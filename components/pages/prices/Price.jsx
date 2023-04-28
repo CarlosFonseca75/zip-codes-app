@@ -43,7 +43,6 @@ export default function Price({ _id, price, zipCode, plan, setShowModals, setCur
 
       {/* Zip code. */}
       <p className={styles["card__zip-code"]}>
-        {" "}
         <strong>Zip code:</strong> {zipCode?.zipCode}
       </p>
 
