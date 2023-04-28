@@ -39,17 +39,7 @@ export default function PrivateNavbar() {
       };
 
       // Request.
-      const { httpStatus, message } = await makeRequest(options);
-
-      // Check for errors.
-      if (httpStatus != 200) {
-        showAlert({
-          title: "Error",
-          type: "danger",
-          message,
-        });
-        return;
-      }
+      await makeRequest(options);
 
       // Show success alert.
       showAlert({ title: "Logged out", message });
